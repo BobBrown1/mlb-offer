@@ -28,3 +28,7 @@ You can view the full source code by navigating to the [main page](https://repli
 
 > ℹ Explanatory comments are added to the code for better readability
 
+## Github:
+
+If you would like to run the project from your own machine, you can pull the [github repo](https://github.com/BobBrown1/mlb-offer) and set up a virtual environment. Assuming you have the necessary packages installed, you can then use `flask run` to launch the front end. 
+
