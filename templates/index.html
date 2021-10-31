@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>MLB Salary Averages</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      body {
+        background-color: #284898;
+        text-align: center;
+        color: white;
+        font-family: Fredoka One;
+      }
+      .offer {
+        border-radius: 12px;
+        border: 8px solid #e81828;
+        padding: 15px;
+      }
+      .button {
+        border-radius: 10px;
+        border: 2px solid white;
+        color: white;
+        background-color: #e81828;
+        font-family: Fredoka One;
+        padding: 8px;
+        font-size: 17px;
+      }
+      .button:hover {
+        background-color: red;
+      }
+      a {
+        color: white;
+        font-family: Fredoka One
+      }
+      @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+    </style>
+  </head>
+  <body>
+    <h1>2016 MLB Player Salaries</h1>
+    <div style="font-family: Fredoka One" class="offer">
+      <h1>Qualifying Offer:</h1>
+      <h2><u>{{offer["offer"]}}</u></h2>
+      <br>
+      <h1>Other Information:</h1>
+      <br>
+      <h2>Highest Player Salary:</h2>
+      <h3><u>{{offer["max"]}}</u></h3>
+      <br>
+      <h2>125th Player Salary:</h2>
+      <h3><u>{{offer["lowest_of"]}}</u></h3>
+      <br>
+      <h2>Lowest Player Salary:</h2>
+      <h3><u>{{offer["min"]}}</u></h3>
+      <br>
+      <button class="button" onclick="location.reload()">↻ Refresh</button>
+      <br>
+      <br>
+      <button class="button" onclick="location.href = 'https://questionnaire-148920.appspot.com/swe/data.html'">Data Table</button>
+    </div>
+    <p>View project source code <a href="https://replit.com/@AppleJuiceFan/mlb-offer#main.py">here</a></p>
+  </body>
